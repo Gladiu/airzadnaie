@@ -1,4 +1,4 @@
-package com.example.air
+package com.mobile
 
 import org.junit.Test
 
