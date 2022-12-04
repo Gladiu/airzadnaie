@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Mobile"
+rootProject.name = "IoT_lab6"
 include ':app'

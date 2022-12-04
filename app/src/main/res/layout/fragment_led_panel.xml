@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ledPanel.LedPanelFragment">
+
+    <Button
+        android:id="@+id/btn_set_color"
+        android:layout_width="126dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ustaw kolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="408dp"
+        android:layout_height="424dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_wyczysc_wszystkie"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led00"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led10"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led20"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led30"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led40"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led50"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led60"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led70"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led01"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led11"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led21"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led31"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led41"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led51"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led61"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led71"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led02"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led12"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led22"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led32"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led42"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led52"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led62"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led72"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led03"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led13"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led23"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led33"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led43"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led53"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led63"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led73"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led04"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led14"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led24"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led34"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led44"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led54"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led64"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led74"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led05"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led15"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led25"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led35"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led45"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led55"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led65"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led75"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led06"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led16"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led26"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led36"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led46"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led56"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led66"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led76"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/led07"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led17"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led27"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led37"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led47"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led57"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led67"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/led77"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@android:color/darker_gray" />
+        </TableRow>
+    </TableLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_tryb_rysowania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_set_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Ustaw wszystkie"
+        app:layout_constraintStart_toStartOf="@+id/switch_tryb_rysowania"
+        app:layout_constraintTop_toBottomOf="@+id/switch_tryb_rysowania" />
+
+    <Button
+        android:id="@+id/btn_wyczysc_wszystkie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wyczysc wszystkie"
+        app:layout_constraintStart_toStartOf="@+id/btn_set_all"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_all" />
+
+    <TextView
+        android:id="@+id/switch_text_lewy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Rysuj"
+        app:layout_constraintBottom_toTopOf="@+id/switch_tryb_rysowania"
+        app:layout_constraintEnd_toStartOf="@+id/switch_tryb_rysowania"
+        app:layout_constraintStart_toStartOf="@+id/switch_tryb_rysowania" />
+
+    <TextView
+        android:id="@+id/switch_text_prawy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Czyść"
+        app:layout_constraintBottom_toTopOf="@+id/switch_tryb_rysowania"
+        app:layout_constraintEnd_toEndOf="@+id/switch_tryb_rysowania"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/switch_tryb_rysowania" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.iot_lab6.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_ledPanelFragment"
+            app:destination="@id/ledPanelFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_plotPanelFragment"
+            app:destination="@id/plotPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ledPanelFragment"
+        android:name="com.example.iot_lab6.ui.ledPanel.LedPanelFragment"
+        android:label="fragment_led_panel"
+        tools:layout="@layout/fragment_led_panel" >
+        <action
+            android:id="@+id/action_ledPanelFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plotPanelFragment"
+        android:name="com.example.iot_lab6.ui.plotPanel.PlotPanelFragment"
+        android:label="fragment_plot_panel"
+        tools:layout="@layout/fragment_plot_panel" >
+        <action
+            android:id="@+id/action_plotPanelFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="UpdateTime"
+            app:argType="long"
+            android:defaultValue="100L" />
+    </fragment>
+</navigation>
